@@ -1,22 +1,44 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #000;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  flex-grow: 1;
+}
+
+a {
+  display: block;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 4px solid #000;
+}
+
+a:hover {
+  color: yellowgreen;
+}
+
+section {
+  padding-top: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.home_selected,
+.news,
+.contact {
+  border-bottom-color: yellowgreen;
 }
